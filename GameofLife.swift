@@ -59,6 +59,7 @@ class GameOfLife {
                 if x == i && y == j {
                     continue
                 }
+                // one line 27 live cell dies and thus, should be taken that into consideration while checking for live neighbors
                 if board[x][y] == 1 || board[x][y] == 2 {
                     live += 1
                 }
